@@ -1,8 +1,7 @@
-#!/bin/env python3
 import random
 
 #生成用户信息字典
-#info={str(''.join(chr(random.randint(97,122)) for _ in range(3))):['{:<2}:186{:8}'.format(v,"".join(chr(random.randint(48,57)) for j in range(8)))] for v in range(50) }
+info={str(''.join(chr(random.randint(97,122)) for _ in range(3))):['{:<2}:186{:8}'.format(v,"".join(chr(random.randint(48,57)) for j in range(8)))] for v in range(50) }
 
 for i in range(len(info)):
     enter=input('Please enter your choice:\n[delete,update,find,list,exit]\n')
@@ -33,4 +32,3 @@ for i in range(len(info)):
         break
     else:
         print('Error,Please enter your choice:\n[delete,update,find,list,exit]\n')
-
