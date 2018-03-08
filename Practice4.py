@@ -13,7 +13,7 @@ def sort_method(src,group):
             if src[y] < src[y-1]:
                 src[y-1],src[y] = src[y],src[y-1]
     else:
-        temp=list(set(src) ^ set(group))
+        temp= [ i for i in list(set(src) ^ set(group)) if i in src ]
         temp.insert(0,group)
         a,b=temp[0],temp[1:]
         src=[*a,*b]
